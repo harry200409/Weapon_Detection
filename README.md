@@ -46,21 +46,21 @@ pip install -r requirements.txt
 
 3. **Usage**:
 
-**Knife Detection**:
-Run the knife detection script:
+  **Knife Detection**:
+  Run the knife detection script:
 ```bash
 python knife_detection.py
 ```
 
-**Gun Detection**:
-Run the gun detection script:
+  **Gun Detection**:
+  Run the gun detection script:
 ```bash
 python gun_detection.py
 ```
 
-## Dataset
+  ## Dataset
 
-The project uses custom datasets for both gun and knife detection. The datasets should follow this structure:
+  The project uses custom datasets for both gun and knife detection. The datasets should follow this structure:
 
 ```bash
 dataset/
@@ -75,20 +75,18 @@ dataset/
     └── labels/
 ```
 
-**Images**: .jpg or .png
-**Labels**: YOLO format .txt
+  **Images**: .jpg or .png
 
-## Models
+  **Labels**: YOLO format .txt
 
-**YOLOv5s**: Lightweight and fast version of YOLOv5.
-**YOLOv8n**: Ultralytics' latest model with improved performance and speed.
+  ## Models
 
-Model weights should be stored in the data/ directory.
+  **YOLOv5s**: Lightweight and fast version of YOLOv5.
+  **YOLOv8n**: Ultralytics' latest model with improved performance and speed.
+  Model weights should be stored in the data/ directory.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Acknowledgments
-YOLOv5 by Ultralytics
-YOLOv8 by Ultralytics
-Dataset contributors and open-source community
+  ## Acknowledgments
+  YOLOv5 by Ultralytics
+  YOLOv8 by Ultralytics
+  Dataset contributors and open-source community
