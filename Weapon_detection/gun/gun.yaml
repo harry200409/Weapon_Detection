@@ -1,0 +1,7 @@
+path: C:/gun/yolov5/guns-2  
+
+train: C:/gun/yolov5/guns-2/train/images
+val: C:/gun/yolov5/guns-2/val/images
+
+names:
+  0: gun
