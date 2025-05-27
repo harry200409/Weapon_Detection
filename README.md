@@ -82,11 +82,15 @@ dataset/
   ## Models
 
   **YOLOv5s**: Lightweight and fast version of YOLOv5.
+  
   **YOLOv8n**: Ultralytics' latest model with improved performance and speed.
+  
   Model weights should be stored in the data/ directory.
 
 
   ## Acknowledgments
   YOLOv5 by Ultralytics
+  
   YOLOv8 by Ultralytics
+  
   Dataset contributors and open-source community
