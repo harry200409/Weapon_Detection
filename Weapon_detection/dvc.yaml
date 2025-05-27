@@ -1,0 +1,10 @@
+stages:
+  detect:
+    cmd: python knife_detection.py
+    deps:
+      - data/yolov5s.pt
+      - knife_detection.py
+    outs:
+      - detection_results/
+    metrics:
+      - metrics.json 

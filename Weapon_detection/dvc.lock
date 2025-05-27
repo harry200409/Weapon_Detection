@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  detect:
+    cmd: python knife_detection.py
+    deps:
+    - path: data/yolov5s.pt
+      hash: md5
+      md5: 523cc152dea05959e1a07f04fb43ebcf
+      size: 14808437
+    - path: knife_detection.py
+      hash: md5
+      md5: 3f4e32a0f0f04924d39372c24e66712d
+      size: 4015
+    outs:
+    - path: detection_results/
+      hash: md5
+      md5: e61042abd8eddfb7900ae299a6a567a0.dir
+      size: 2761754
+      nfiles: 14
+    - path: metrics.json
+      hash: md5
+      md5: b3c08416262eddae5ec983d0258d43f9
+      size: 141
