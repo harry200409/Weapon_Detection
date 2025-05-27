@@ -12,4 +12,83 @@ A deep learning-based system for detecting weapons (guns and knives) in images a
   - YOLOv8
 
 ## Project Structure
-<pre lang="text"><code>```text . ├── gun/ # Gun detection related files │ ├── dataset/ # Training and testing datasets for guns │ ├── yolov5/ # YOLOv5 implementation │ └── app.py # Gun detection application ├── knife/ # Knife detection related files ├── data/ # Model weights and configurations ├── gun_detection.py # Main gun detection script ├── knife_detection.py # Main knife detection script └── requirements.txt # Project dependencies ``` </code></pre>
+
+```text
+├── gun/                # Gun detection related files
+│   ├── dataset/        # Training and testing datasets for guns
+│   ├── yolov5/         # YOLOv5 implementation
+│   └── app.py          # Gun detection application
+├── knife/              # Knife detection related files
+├── data/               # Model weights and configurations
+├── gun_detection.py    # Main gun detection script
+├── knife_detection.py  # Main knife detection script
+└── requirements.txt    # Project dependencies
+```
+
+
+## Prerequisites
+- Python
+- CUDA-compatible GPU (recommended for faster inference)
+- Install dependencies listed in `requirements.txt`
+
+## Installation
+
+1. **Clone the repository**:
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+2. **Install dependencies**:
+```bash
+pip install -r requirements.txt
+```
+
+3. **Usage**:
+
+**Knife Detection**:
+Run the knife detection script:
+```bash
+python knife_detection.py
+```
+
+**Gun Detection**:
+Run the gun detection script:
+```bash
+python gun_detection.py
+```
+
+## Dataset
+
+The project uses custom datasets for both gun and knife detection. The datasets should follow this structure:
+
+```bash
+dataset/
+├── train/
+│   ├── images/
+│   └── labels/
+├── val/
+│   ├── images/
+│   └── labels/
+└── test/
+    ├── images/
+    └── labels/
+```
+
+**Images**: .jpg or .png
+**Labels**: YOLO format .txt
+
+## Models
+
+**YOLOv5s**: Lightweight and fast version of YOLOv5.
+**YOLOv8n**: Ultralytics' latest model with improved performance and speed.
+
+Model weights should be stored in the data/ directory.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgments
+YOLOv5 by Ultralytics
+YOLOv8 by Ultralytics
+Dataset contributors and open-source community
